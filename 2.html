@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>requireJS</title>
+    <title>requireJS define-function</title>
 </head>
 <body>
+    <button id="cliclMe">Asynchronous Module Definition</button>
     
-    <script data-main="./js/config" src="./lib/require.js"></script>
+    <script data-main="./js/config" src="./lib/require"></script>
     <script>
         require(['config'],function(){
-            require(['customScripts/jqueryFile.js']);
+            require(['customScripts/jqueryFile']);
         });
     </script>
 </body>
